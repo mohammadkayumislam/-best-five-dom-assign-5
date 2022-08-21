@@ -14,8 +14,6 @@
 
         }
 
-
-
         .player-photo img {
             width: 303px;
             height: 303px;
@@ -53,9 +51,9 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/messi.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Lionel Messi</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="messi">Lionel Messi</h1>
                     <p class="text-1xl font-semibold text-white mb-1">36 Goals 120 Assist</p>
-                    <button
+                    <button id="player-1-select-btn"
                         class="bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
                 </div>
 
@@ -63,31 +61,32 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/Neymar.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Neymar Jr</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="neymar">Neymar Jr</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 110 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
+                    <button id="player-2-select-btn"
+                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
                 </div>
 
 
                 <!-- player-3 Kylian Mbappé -->
+
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/mbappe.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Kylian Mbappé</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Mbappe">Kylian Mbappé</h1>
                     <p class="text-1xl font-semibold text-white mb-1">26 Goals 90 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
+                    <button id="player-3-select-btn"
+                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
                 </div>
 
-                <!-- list box  -->
+                <!---------------------------------- LIST BOX ------------ ----------------->
+
                 <div class=" text-center border rounded-lg  shadow-2xl">
                     <h1 class="text-white text-3xl italic font-semibold pt-2 underline">Selected - Player</h1>
 
-                    <div class="text-white pt-3">
+                    <div id="set-player-name" class="text-white  text-3xl font-semibold pt-3">
 
                     </div>
                 </div>
-
 
 
 
@@ -95,10 +94,10 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/Cristiano_Ronaldo.jpg" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Cristiano Ronaldo</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="rolando">Cristiano Ronaldo</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                    <button id="player-4-select-btn"
+                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
 
@@ -107,10 +106,10 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/Ángel Di María.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Ángel Di María</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="maria">Ángel Di María</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                    <button id="player-5-select-btn"
+                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
                 <!-- player-6 Mesut Özil  -->
@@ -118,10 +117,10 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/Mesut Özil.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Mesut Özil</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="ozil">Mesut Özil</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                    <button id="player-6-select-btn"
+                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
 
@@ -201,10 +200,10 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/Sergio Agüero.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Sergio Agüero</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Sergio">Sergio Agüero</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                    <button id="player-7-select-btn"
+                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
                 <!-- player-8 Andres Iniesta-->
@@ -212,10 +211,10 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/Andres Iniesta.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white">Andres Iniesta</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Andres">Andres Iniesta</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                    <button id="player-8-select-btn"
+                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
                 <!-- player-9  Xavi -->
@@ -223,10 +222,10 @@
 
                 <div class=" text-center border rounded-lg player-photo shadow-2xl">
                     <img src="Photo/Xavi.png" alt="">
-                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white"> Xavi</h1>
+                    <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Xavi"> Xavi</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
-                    <button
-                        class="bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                    <button id="player-9-select-btn"
+                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
             </div>
