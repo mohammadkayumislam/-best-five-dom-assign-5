@@ -2,7 +2,6 @@
 function getPlayerNameById(nameId) {
     const playerNameElement = document.getElementById(nameId)
     const playerName = playerNameElement.innerText;
-    // console.log(playerName)
     return playerName;
 }
 
@@ -66,6 +65,8 @@ document.getElementById('player-9-select-btn').addEventListener('click', functio
     const Xavi = getPlayerNameById('Xavi');
     const list = setNameInPlayerList('set-player-name', Xavi);
 })
+
+
 
 
 
