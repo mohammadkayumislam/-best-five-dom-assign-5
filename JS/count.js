@@ -163,6 +163,7 @@ function getAmountById(amountId) {
 
 
 
+
 function setAmountInTextFieldById(fieldId) {
     const expensesAmountElement = document.getElementById(fieldId);
     const expensesAmountElementString = expensesAmountElement.innerText
@@ -174,34 +175,30 @@ function setAmountInTextFieldById(fieldId) {
 
 
 
+
+
 // <<<<------------------ get calculate amount and add evenlistener--------------------------------->>>>>
-// ---------------------------------------
+
 
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
 
-    const perPlayerAmount = setNameInPlayerList('player-amount');
-    const playerExpenses = setAmountInTextFieldById('player-expenses')
-
-
-
-
-
-    // const totalPlayerExpense = perPlayerAmount * number;
-
-
-
-
-
-
-
+    const perPlayerAmount = getAmountById('player-amount');
+    const totalPlayerElement = document.getElementById('set-player-name');
+    const totalPlayerElementString = totalPlayerElement.childNodes.length;
+    const totalPlayers = parseFloat(totalPlayerElementString);
+    const totalSelectedPlayer = totalPlayers - 1;
+    const totalPlayerExpense = perPlayerAmount * totalSelectedPlayer;
+    const totalExpenses = document.getElementById('player-expenses')
+    totalExpenses.innerText = totalPlayerExpense;
 
 })
 
+
+
+
+
 //  <<<<<<----------------------calculate all total Amount and set in the total amount field----------------------->>>>>
-
-
-
 
 
 document.getElementById('calculate-total-btn').addEventListener('click', function () {
