@@ -54,7 +54,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="messi">Lionel Messi</h1>
                     <p class="text-1xl font-semibold text-white mb-1">36 Goals 120 Assist</p>
                     <button id="player-1-select-btn"
-                        class="bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
+                        class="bg-green-600  px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
                 </div>
 
                 <!-- player-2  Neymar  -->
@@ -64,7 +64,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="neymar">Neymar Jr</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 110 Assist</p>
                     <button id="player-2-select-btn"
-                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
+                        class=" bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
                 </div>
 
 
@@ -75,7 +75,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Mbappe">Kylian Mbappé</h1>
                     <p class="text-1xl font-semibold text-white mb-1">26 Goals 90 Assist</p>
                     <button id="player-3-select-btn"
-                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
+                        class="  bg-green-600 px-12 text-3xl font-semibold mb-2 text-white  rounded-lg">SELECT</button>
                 </div>
 
                 <!---------------------------------- LIST BOX ------------ ----------------->
@@ -83,7 +83,7 @@
                 <div class=" text-center border rounded-lg  shadow-2xl">
                     <h1 class="text-white text-3xl italic font-semibold pt-2 underline">Selected - Player</h1>
 
-                    <div id="set-player-name" class="text-white  text-3xl font-semibold pt-3">
+                    <div class="text-white text-left pl-5  text-3xl font-semibold pt-3" id="set-player-name">
 
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="rolando">Cristiano Ronaldo</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
                     <button id="player-4-select-btn"
-                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                        class=" bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
 
@@ -109,7 +109,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="maria">Ángel Di María</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
                     <button id="player-5-select-btn"
-                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                        class="  bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
                 <!-- player-6 Mesut Özil  -->
@@ -120,7 +120,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="ozil">Mesut Özil</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
                     <button id="player-6-select-btn"
-                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                        class=" bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
 
@@ -144,21 +144,22 @@
 
 
                     <h1 class=" py-4 text-white text-1xl font-semibold">Per Player: <input
-                            class="w-2/4 text-black py-1 px-5 border-4 ml-4 border-red-800" type="text" name="" id="">
+                            class="w-2/4 text-black py-1 px-5 border-4 ml-4 border-red-800" type="text" name=""
+                            id="player-amount">
                     </h1>
 
                     <!-- player amount button  -->
 
 
-                    <button
-                        class="bg-green-600 px-12 text-2xl font-medium  text-white py-1  rounded-md">Calculate</button>
+                    <button class="bg-green-600 px-12 text-2xl font-medium  text-white py-1  rounded-md"
+                        id="calculate-btn">Calculate</button>
 
 
                     <!-- Player Expenses section  -->
 
 
-                    <h1 class=" text-white text-2xl py-3 font-semibold">Player Expenses : <span
-                            class="pl-4">$<span>000</span></span>
+                    <h1 class=" text-white text-2xl py-3 font-semibold">Player Expenses : <span class="pl-4">$<span
+                                id="player-expenses">000</span></span>
                     </h1>
 
 
@@ -166,7 +167,8 @@
 
 
                     <h1 class=" py-2 text-white text-1xl font-semibold">Manager: <input
-                            class="w-2/4 ml-3 text-black py-1 px-5 border-4 border-red-800" type="text" name="" id="">
+                            class="w-2/4 ml-3 text-black py-1 px-5 border-4 border-red-800" type="text" name=""
+                            id="manager-amount">
                     </h1>
 
 
@@ -175,14 +177,15 @@
 
                     <h1 class=" py-2 text-white text-1xl font-semibold">Coach: <input
                             class="w-2/4 ml-6 text-black py-1 mb-3 px-5 border-4 border-red-800" type="text" name=""
-                            id="">
+                            id="coach-amount">
                     </h1>
 
 
                     <!-- Calculate Total section  -->
 
 
-                    <button class="bg-green-600 px-10 text-2xl font-medium  text-white py-1  rounded-md">Calculate
+                    <button class="bg-green-600 px-10 text-2xl font-medium  text-white py-1  rounded-md"
+                        id="calculate-total-btn">Calculate
                         Total</button>
 
 
@@ -191,7 +194,8 @@
 
 
                     <h1 class="py-3 text-white text-2xl font-semibold">Total :<span
-                            class="text-3xl pl-12 text-red-800 font-bold">$<span>000</span></span></h1>
+                            class="text-3xl pl-12 text-red-800 font-bold">$<span id="total-amount">000</span></span>
+                    </h1>
                 </div>
 
 
@@ -203,7 +207,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Sergio">Sergio Agüero</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
                     <button id="player-7-select-btn"
-                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                        class="  bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
                 <!-- player-8 Andres Iniesta-->
@@ -214,7 +218,7 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Andres">Andres Iniesta</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
                     <button id="player-8-select-btn"
-                        class=" player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                        class="  bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
                 <!-- player-9  Xavi -->
@@ -225,21 +229,13 @@
                     <h1 class="text-3xl font-bold pl-3 py-2 te text-white" id="Xavi"> Xavi</h1>
                     <p class="text-1xl font-semibold text-white mb-1">30 Goals 125 Assist</p>
                     <button id="player-9-select-btn"
-                        class="player-select-btn bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
+                        class=" bg-green-600 px-12 text-3xl font-semibold  text-white mb-2 rounded-lg">SELECT</button>
                 </div>
 
             </div>
 
         </section>
     </main>
-
-
-
-
-
-
-
-
 
     <hr>
     <footer class="bg-black pt-12 pb-2">
