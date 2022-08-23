@@ -146,13 +146,10 @@ document.getElementById('player-9-select-btn').addEventListener('click', functio
 
 // <<<<--------------- get player ,coach & manager  amount by id from input field------------------------------>>>>>>>>
 
-
-
-
 function getAmountById(amountId) {
     const amountElement = document.getElementById(amountId)
     const amountElementString = amountElement.value;
-    const amount = parseFloat(amountElementString)
+    const amount = parseFloat(amountElementString);
     return amount;
 }
 
@@ -160,9 +157,6 @@ function getAmountById(amountId) {
 
 
 // <<<<<<---------------------- get total expenses amount field -------------------------------------->>>>>
-
-
-
 
 function setAmountInTextFieldById(fieldId) {
     const expensesAmountElement = document.getElementById(fieldId);
@@ -173,16 +167,10 @@ function setAmountInTextFieldById(fieldId) {
 
 
 
-
-
-
-
 // <<<<------------------ get calculate amount and add evenlistener--------------------------------->>>>>
 
 
-
 document.getElementById('calculate-btn').addEventListener('click', function () {
-
     const perPlayerAmount = getAmountById('player-amount');
     const totalPlayerElement = document.getElementById('set-player-name');
     const totalPlayerElementString = totalPlayerElement.childNodes.length;
@@ -193,8 +181,6 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     totalExpenses.innerText = totalPlayerExpense;
 
 })
-
-
 
 
 
